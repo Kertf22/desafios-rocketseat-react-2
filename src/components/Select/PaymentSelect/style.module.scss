@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+.payment-select {
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: $base-button;
+    color: $purple; 
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $base-hover;
+    }
+
+    p{
+        font-size:$font-normal-size-6;
+        font-weight: font-normal-weight;
+        margin: 0;
+    }
+
+}
+.active {
+    border: 1px solid $purple;
+}

@@ -1,0 +1,84 @@
+@import '../../../../styles/variables.scss';
+
+.home_info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .home_info_right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+
+        h1 {
+            font-weight: 700;
+            color: black;
+            margin-bottom: 1rem;
+            font-size: 48px;
+            // font-family: 'Baloo 2';
+            // font-style: normal
+        }
+
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: black;
+            margin: 0;
+        }
+
+        .home_info_list {
+            width: 100%;
+            max-width: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 12px;
+
+            .home_info_list_item {
+                flex: 50%;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 10px;
+
+
+                .icon {
+                    border-radius: 1000px;
+                    padding: 8px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .purple {
+                    background-color: $purple;
+                }
+
+                .yellow {
+                    background-color: $yellow-dark;
+                }
+
+                .yellow-light {
+                    background-color: $yellow;
+                }
+
+                .gray {
+                    background-color: $base-text;
+                }
+
+            }
+
+        }
+    }
+
+    .home_info_left {
+        width: 50%;
+    }
+}

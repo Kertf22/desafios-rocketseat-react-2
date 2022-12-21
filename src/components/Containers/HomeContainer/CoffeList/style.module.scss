@@ -1,0 +1,90 @@
+@import '../../../../styles/variables.scss';
+
+
+.coffe-continer {
+    .coffe-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 40px;
+
+        .coffe-item {
+            align-items: center;
+            justify-content: space-between;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            padding: 6px 32px;
+            border-radius: 5px;
+            width: 256px;
+            height: 310px;
+            border-radius: 6px 36px;
+            background-color: $base-card;
+            text-align: center;
+            gap: 5px;
+
+            .coffe-item__img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                position: relative;
+                top: -30px;
+
+                // bor
+            }
+
+            .coffe-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin-bottom: 10px;
+
+                .coffe-tags__item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 6px;
+                    border-radius: 100%;
+                    background-color: $yellow_light;
+                    color: $yellow-dark;
+                    font-family: $font-normal-family;
+                    font-size: $font-normal-size-7;
+                    font-weight: $font-normal-weight;
+                    line-height: $font-normal-line-height;
+                    text-align: center;
+                }
+            }
+
+            .coffe-item__title {
+                font-family: $font-header-family;
+                font-size: $font-headar-size-3;
+                font-weight: $font-headar-weight;
+                margin: 0;
+                color: $base-title;
+
+            }
+
+            .coffe-item__descr {
+                margin: 0;
+                font-size: $font-normal-size-5;
+                font-weight: $font-normal-weight;
+                color: $base-label;
+            }
+
+            .coffe-item__down {
+                display: flex;
+                gap: 8px;
+                width: 208px;
+
+                .coffe-item__price {
+                    margin-right: 8px;
+                    font-size: $font-normal-size-3;
+                    font-family: $font-header-family;
+                    font-weight: $font-normal-weight-bold;
+                }
+            }
+        }
+    }
+}

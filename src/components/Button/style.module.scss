@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+
+.button {
+    display: flex;
+    padding: 8px 10px;
+    border-radius: 6px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+
+    &.purple {
+        background-color: $purple-dark;
+
+        &:hover {
+            background-color: $purple;
+        }
+
+        color: $white;
+    }
+
+    &.secondary {
+        background-color: $yellow;
+
+        &:hover {
+            background-color: $yellow-dark;
+        }
+
+        color: $white;
+    }
+
+    &.tertiary {
+        background-color: $base-button;
+        color: $purple;
+
+        &:hover {
+            background-color: $base-hover;
+        }
+    }
+
+    &.yellow-light {
+        background-color: $yellow_light;
+        color: $yellow-dark;
+    }
+}

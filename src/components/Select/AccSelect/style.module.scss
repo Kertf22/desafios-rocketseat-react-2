@@ -1,0 +1,47 @@
+@import '../../../styles/variables.scss';
+
+.accSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    width: 72px;
+    border-radius: 6px;
+    background-color: $base-button;
+
+    .accSelect__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        color: $purple;
+        font-family: $font-normal-family;
+        font-weight: $font-normal-weight-bold;
+        font-size: $font-normal-size-4;
+        line-height: $font-normal-line-height;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        outline: none;
+
+        :hover {
+            color: $purple-dark;
+        }
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: $font-normal-size-4;
+    }
+}

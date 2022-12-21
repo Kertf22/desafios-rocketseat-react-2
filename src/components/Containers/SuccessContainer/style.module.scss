@@ -1,0 +1,109 @@
+@import '../../../styles/variables';
+
+.content-left {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+
+    .content-left-title {
+        font-family: $font-header-family;
+        font-weight: $font-headar-weight;
+        font-size: $font-headar-size-2;
+        color: $yellow-dark;
+        margin: 0;
+    }
+
+    .content-left-subtitle {
+        color: $base-subtitle;
+        margin: 0;
+    }
+
+    .content-card {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 526px;
+        height: 270px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px;
+        gap: 32px;
+
+        border: 1px solid;
+        border-radius: 6px 36px;
+        // border-image: linear-gradient(102.89deg, #DBAC2C 2.61%, #8047F8 98.76%);
+
+        border-color: #8047F8;
+
+
+        .content-card-item {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+
+            font-size: $font-normal-size-4;
+            line-height: $font-normal-line-height;
+
+
+
+            .icon {
+                border-radius: 1000px;
+                padding: 8px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .purple {
+                background-color: $purple;
+            }
+
+            .yellow-dark {
+                background-color: $yellow-dark;
+            }
+
+            .yellow-light {
+                background-color: $yellow;
+            }
+        }
+    }
+
+}
+
+
+.content-right {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;    
+
+    img {
+        max-width: 492px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+    }
+}

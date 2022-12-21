@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.input {
+    background-color: $base-input;
+    color: $base-label;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid $base-button;
+    outline: none;
+    
+    &.sm {
+        max-width: 15%;
+    }
+    
+    &.md {
+        max-width: 35%;
+    }
+    
+    &.lg {
+        max-width: 85%;
+    }   
+    
+    &.xl {
+        max-width: 100%;
+    }
+
+    &:focus {
+        border: 1px solid $yellow;
+    }
+}
+
